@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="theme-light">
+    <header class="enclosure">
+      <a href="#" class="c round box logo">
+        <img src="logo.png" height="64" alt="Expowand’s Logo" />
+      </a>
+
+      <input
+        class="c round box search"
+        type="search"
+        name="s"
+        placeholder="Search..."
+      />
+
+      <fieldset class="round box row">
+        <input
+          type="radio"
+          name="theme"
+          value="dark"
+          id="theme-dark"
+          class="round icon"
+          title="Switch to a dark theme"
+        />
+        <input
+          type="radio"
+          name="theme"
+          value="light"
+          id="theme-light"
+          class="round icon"
+          title="Switch to a light theme"
+          checked
+        />
+      </fieldset>
+
+      <a href="about/" class="round box nowrap">
+        <figure class="round icon">
+          <img src="i/photo.jpg" width="64" height="64" alt="Photo" />
+        </figure>
+        <h3>Max Mustermann</h3>
+      </a>
+    </header>
+
+    <nav class="enclosure col nogap">
+      <a class="round box nowrap" href="/"
+        ><i class="fa fa-tachometer"></i> Dashboard</a
+      >
+      <a class="round box nowrap" href="inquiries"
+        ><i class="fa fa-envelope-o"></i> Anfragen</a
+      >
+      <a class="round box nowrap" href="aclients" class="active"
+        ><i class="fa fa-users"></i> Kunden</a
+      >
+      <a class="round box nowrap" href="termins"
+        ><i class="fa fa-calendar"></i> Besichtigungstermine</a
+      >
+      <a class="round box nowrap" href="sales"
+        ><i class="fa fa-eur"></i>Verkauf</a
+      >
+      <a class="round box nowrap" href="offers"
+        ><i class="fa fa-building-o"></i> Objekte</a
+      >
+      <a class="round box nowrap" href="documents"
+        ><i class="fa fa-file-text-o"></i> Dokumente</a
+      >
+      <a class="round box nowrap" href="massmail"
+        ><i class="fa fa-newspaper-o"></i> Mass-Mailing</a
+      >
+      <a class="round box nowrap" href="marketing"
+        ><i class="fa fa-line-chart"></i> Marketing</a
+      >
+      <a class="round box nowrap" href="ateam"
+        ><i class="fa fa-users"></i> Immobilienmakler</a
+      >
+      <a class="round box nowrap" href="emailtemplates"
+        ><i class="fa fa-envelope-o"></i> E-Mail-Vorlagen</a
+      >
+    </nav>
+
+    <main class="enclosure">
+      <article class="col box round">
+        <h3>Anfragen</h3>
+        <div class="event">
+          <span class="inline-icon pill-info">
+            <i class="fa-solid fa-link"></i>
+          </span>
+          <div class="note">Link gesendet für {{ObjektID:849}}</div>
+        </div>
+        <div class="event">
+          <span class="inline-icon pill-info">
+            <i class="fa-solid fa-link"></i>
+          </span>
+          <div class="note">Link gesendet für {{ObjektID:850}}</div>
+        </div>
+        <div class="event">
+          <span class="inline-icon pill-info">
+            <i class="fa-solid fa-link"></i>
+          </span>
+          <div class="note">Link gesendet für {{ObjektID:941}}</div>
+        </div>
+        <div class="round bg-accent" style="--b: var(--blue)">
+          Alle ansehen →
+        </div>
+      </article>
+
+      <article class="col box round">
+        <h3>Kunden</h3>
+        <div class="event">
+          <span class="inline-icon pill-success">
+            <i class="fa-solid fa-check"></i>
+            <i class="fa fa-eye"></i>
+          </span>
+          <div class="note">Expose gelesen für {{ObjektID:849}}</div>
+        </div>
+        <div class="event">
+          <span class="inline-icon pill-success">
+            <i class="fa-solid fa-check"></i>
+            <i class="fa fa-eye"></i>
+          </span>
+          <div class="note">Expose gelesen für {{ObjektID:850}}</div>
+        </div>
+        <div class="event">
+          <span class="inline-icon pill-success">
+            <i class="fa-solid fa-check"></i>
+            <i class="fa fa-eye"></i>
+          </span>
+          <div class="note">Expose gelesen für {{ObjektID:941}}</div>
+        </div>
+        <div class="round bg-accent" style="--b: var(--green-light)">
+          Alle ansehen →
+        </div>
+      </article>
+
+      <article class="col box round">
+        <h3>Besichtigungstermine</h3>
+        <div class="round bg-accent" style="--b: var(--rose)">
+          Momentan keine
+        </div>
+      </article>
+
+      <article class="col box round">
+        <h3>Verkauf</h3>
+        <div class="event">
+          <span class="inline-icon pill-success">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+          <div class="note">20 neue Kontakten zum Verkaum</div>
+        </div>
+        <div class="round bg-accent" style="--b: var(--green-light)">
+          Alle ansehen →
+        </div>
+      </article>
+
+      <article class="col box round">
+        <h3>Objekte</h3>
+        <div class="event">
+          <span class="inline-icon pill-success">
+            <i class="fa-solid fa-plus"></i>
+          </span>
+          <div class="note">2 neue Angebote</div>
+        </div>
+        <div class="round bg-accent" style="--b: var(--green-light)">
+          Alle ansehen →
+        </div>
+      </article>
+    </main>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://expowand.local/www/css/fa-all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://expowand.local/www/css/font-awesome.min.css?v=4.7.0"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <footer class="end h-card">
+      <address class="col nogap h-adr">
+        <span class="p-name p-org">Lead Value GmbH</span>
+        <span class="p-street-address">Siemensstraße 8</span>
+        <span class="nogap">
+          <span class="p-country-name">D</span>-<span class="p-postal-code"
+            >40885</span
+          >
+          <span class="p-locality">Ratingen</span>
+        </span>
+      </address>
+      <div class="col nogap">
+        <a href="tel:+4921024826568">+49 2102 1458933</a>
+        <a href="mailto:info@leadvalue.de">info@leadvalue.de</a>
+        <a href="http://www.leadvalue.de">www.leadvalue.de</a>
+      </div>
+      <div class="col nogap">
+        <a href="impressum">Impressum</a>
+        <a href="datenschutzerklaerung">Datenschutzerklärung</a>
+        <a href="impressum">Kontakt</a>
+      </div>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>
